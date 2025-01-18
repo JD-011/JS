@@ -50,3 +50,21 @@ if (userLoggedIn && debitCard && 2==3) {
 if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in");
 }
+
+// some experiment on == and === :
+
+let arr1 = [1, 2, 3]
+let arr2 = [1, 2, 3]
+
+// if(arr1 == arr2) console.log("executed");
+
+let str1 = "jayveer"
+let str2 = "jayveer"
+
+// if(str1 == str2) console.log("executed");
+// if(str1 === str2) console.log("executed");
+
+let str3 = new String("jayveer")
+
+if(str1 == str3) console.log("executed");
+if(str1 === str3) console.log("executed");
