@@ -25,6 +25,10 @@ map.set('IN', "India")
 
 // console.log(map);
 
+for (const pair of map) {
+    // console.log(pair);
+}
+
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
@@ -36,5 +40,4 @@ const myObject = {
 
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
-    
 // }
