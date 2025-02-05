@@ -23,7 +23,7 @@
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
+    // attachEvent()
     // jQuery - on
 
     // type, timestamp, defaultPrevented
@@ -47,17 +47,61 @@
     // }, false)
    
     
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
-    
-        
-    })
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }    
+    // });
     
     //removeIt.parentNode.removeChild(removeIt)
+
+    // attachEvent() (this is older method, in the new versions of most browsers this is not supported):
+    // window.attachEvent('onload', (e) => {
+    //     alert("page loaded!");
+    // });
+    // above code doesn't work, may be because it's not supported in newer version of browser...
+
+    // window.addEventListener('load', (e) => {
+    //     alert("page loaded!");
+    // })
+    // this works very smoothly...
+
+    document.querySelector('#images').addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log(e);
+        // console.log(e.type);
+        // console.log(e.timeStamp);
+        // console.log(e.defaultPrevented);
+        // console.log(e.target);
+        // console.log(e.toElement); // not working...
+        // console.log(e.srcElement);
+        // console.log(e.currentTarget);
+        // console.log(e.clientX);
+        // console.log(e.clientY);
+        // console.log(e.screenX);
+        // console.log(e.screenY);
+    });
+
+    // document.addEventListener('keypress', (e) => {
+    //     console.log(e.key);
+    //     console.log(e.keyCode);
+    // });
+
+
+
+    // type : gives the type of the event (like "click", "submit" etc...)
+    // timestamp : returns the number of milliseconds from the document was finished loading until the specific event was created
+    // defaultPrevented : returns true if default action of the event is prevented otherwise return false
+    // target : returns the target where event is occured
+    // toElement : https://learn.microsoft.com/en-us/previous-versions/windows/desktop/wmp/event-toelement
+    // srcElement : srcElement is an alias for the Event. target property. Use Event. target instead
+    // currentTarget : currentTarget tells us on which element the event was attached to or the element whose eventListener triggered the event. event. target tells where the event started
+    // clientX, clientY, screenX, screenY : https://www.geeksforgeeks.org/what-is-the-difference-between-screenx-y-clientx-y-and-pagex-y/
+    // altkey, ctrlkey, shiftkey : returnstrue or false according to the whether that perticular key is pressed or not
+    // key : returns which key is pressed, keyCode : returns the specific code associated with the key pressed
+
 </script>
 </html>
