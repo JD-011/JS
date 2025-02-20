@@ -100,3 +100,10 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
+
+// https://www.geeksforgeeks.org/javascript-promise-all-method/
+
+// The Promise.all() method in JavaScript is used for handling multiple asynchronous operations simultaneously. 
+// It takes an array (or any iterable) of promises and returns a single promise that resolves when all the 
+// input promises resolve or reject if any one of the promises fails. This makes it ideal for scenarios where 
+// you need to wait for multiple asynchronous tasks to complete before proceeding.
