@@ -5,7 +5,7 @@
 
 # Solution code
 
-## project 1
+## Project 1 solution
 
 ```javascript
 console.log("hitesh")
@@ -36,7 +36,7 @@ buttons.forEach(function (button) {
 
 ```
 
-## project 2 solution
+## Project 2 solution
 
 ```javascript
 const form = document.querySelector('form');
@@ -64,7 +64,7 @@ form.addEventListener('submit', function (e) {
 
 ```
 
-## project 3 solution code
+## Project 3 solution
 
 ```javascript
 const clock = document.getElementById('clock');
@@ -79,7 +79,7 @@ setInterval(function () {
 
 ```
 
-## project 4 solution
+## Project 4 solution
 
 
 ```javascript
